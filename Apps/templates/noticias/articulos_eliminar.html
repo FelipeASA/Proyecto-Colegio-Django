@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block top %}
+<h2>Borrar Articulo</h2>
+{% endblock %}
+
+{% block body %}
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Estas seguro de querer eliminar esta noticia : "{{ noticia.titulo }}"?</p>
+    <p>
+        <button class="btn btn-danger" type="submit">Eliminar</button>
+        <a class="btn btn-success" href="{% url 'articulos_listar' %}">Cancelar</a>
+    </p>
+</form>
+{% endblock %}

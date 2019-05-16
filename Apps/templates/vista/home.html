@@ -1,0 +1,36 @@
+
+{% extends 'layout.html' %}
+{% load staticfiles %}
+
+{% block top %}
+<h2>Colegio Los Pinos del Bosque</h2>
+
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+
+    <div class="imagen" >
+        <img src="{% static 'img/pinos.jpg' %}"  alt="">
+       
+    </div>
+    <div class="texto container-fluid" >
+        <div class="border border-warning">
+        <p>El Colegio Los Pinos del Bosque es un establecimiento educacional particular, con niveles </p>
+        <p> de Pre Kínder a IV Medio perteneciente a la Fundación Arturo Merino Benítez,  </p>
+        <p>institución privada sin fines de lucro.</p>
+        <p>El Proyecto Educativo entrega una Educación Integral a sus estudiantes, que favorece</p>
+        <p> el aprendizaje y promueve valores.</p>
+        <p>Nuestros alumnos crecen en un ambiente cálido y acogedor,</p>
+        <p>para que se desarrollen como personas con un alto compromiso ciudadano,</p>
+        <p>por ello trabajamos siempre con calidad, eficiencia e innovación.</p>
+     </div>
+        
+    </div>
+
+
+</div>
+
+{% endblock %}

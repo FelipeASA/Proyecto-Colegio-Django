@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% csrf_token %}
+{% block top %}
+<h2>{{ noticia.titulo }}</h2>
+{% endblock %}
+
+{% block body %}
+<form action="" method="post">
+    
+    
+    <p>{{ noticia.fecha }}</p>
+    <p>{{ noticia.detalle }}</p>
+    
+
+    <p>
+        
+        <a class="btn btn-success" href="{% url 'noticias' %}">Volver</a>
+    </p>
+</form>
+{% endblock %}

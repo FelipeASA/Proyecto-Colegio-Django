@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+
+
+{% block top %}
+<h2>Noticias</h2>
+
+
+
+{% endblock %}
+
+{% block body %}
+
+        {% for item in lista %}
+        
+                <div class="col-sm-4">
+                        <div class="card " style="width: 25rem;">
+                                <div class="card-body">
+                                <h5 class="card-title">{{ item.titulo}}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ item.resumen}}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ item.fecha }}</h6>
+                                <a href="{% url 'articulo_ver' id=item.id %}" class="card-link btn btn-primary">Ver más</a>
+                                
+                                </div>
+                        </div>
+                 </div>
+        
+
+        
+       
+            
+        {% endfor %}
+       
+{% endblock %}

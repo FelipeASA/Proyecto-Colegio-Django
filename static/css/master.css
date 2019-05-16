@@ -1,0 +1,45 @@
+﻿
+
+
+.cen { text-align: center; }
+.izda { text-align: left; }
+.dcha { text-align: right; }
+.jus { text-align: justify; }
+
+.top { vertical-align: top; }
+.mid { vertical-align: middle; }
+.bot { vertical-align: bottom; }
+
+
+
+.card{
+    float: left;
+    margin: 5px;
+   
+}
+
+.container{
+    margin-bottom: 15px;
+}
+.fondo{
+   
+    background-image: url(https://enlinea.santotomas.cl/wp-content/uploads/sites/2/2017/04/liturgia-colegio-el-bosque-008-w.jpg);
+    
+}
+
+.imagen{
+    float: left;
+    width: 10px;
+}
+
+
+.texto{
+    float: right;
+    color: #ffff;
+    background-color: #337ab7;
+    padding: 5px;
+}
+
+.text{
+    padding: 2%;
+}
